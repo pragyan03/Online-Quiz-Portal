@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result Page</title>
+	<link rel="stylesheet" type="text/css" href="css/results_1.css">
+
+	<script type="text/javascript">
+  window.onload = function () {
+  var chart = new CanvasJS.Chart("chartContainer",
+  {
+
+
+    title:{
+      text: "Result Statistics"
+    },
+    data: [
+    {
+      type: "pie",
+      dataPoints: [
+        { y: 6, indexLabel: "Correct Questions" },
+        { y: 3, indexLabel: "Incorrect Questions" },
+        { y: 2, indexLabel: "Not Attempted Questions" }
+      ]
+    }
+    ]
+  });
+  chart.render();
+}
+</script>
+<script type="text/javascript" src="js/canvasjs.min.js"></script>
+
+</head>
+
+<body id="IDbody">
+
+	<div class="topNavBar">
+		<div class="logo_and_form">
+			<div id="imgContainer">
+				<img src="images/logo.jpeg">
+			</div>
+			<div class="topNavBarForm">
+					<p>Welcome : <?php echo $_SESSION["name"] ?></p>
+					<form action="logout.php" method="post">
+						<input type="submit" value="Logout" class="logoutButton">
+					</form>
+			</div>
+		</div>
+	</div>
+  <div class="mainPage">
+    
+    <div class="certificateContainer">
+      
+      <div class="certInliner">
+        
+        <div class="fillerContainer">
+          <div class="topBar">
+            
+            <div class="imageCont"><img src="images/logo_t.png" alt="LOGO"></div>
+            <div class="headingLine">Certificate Of Appreciation</div>
+            <div class="ribbonImg"><img src="images/ribbon.png" alt="ribbon"></div>
+
+          </div>
+          <div class="middleSection">
+
+              <div class="subHeadingContainer">This is to certify that <div id="nameTag">Pragyan Dalmia<!--<?php echo $_SESSION['name'] ?>--></div> has successfully completed course of <div id="courseName">Database Management System<!--<?php echo $_SESSION['courseID'] ?>--></div> and has obtained <div id="percentTag">94%<!--<?php echo $_SESSION['score'] ?>--></div>.
+              </div>
+             
+          </div>
+          
+          <div class="lastSection">
+              
+              <div class="stats">
+                <div class="headingStats">Statistics</div>
+                <div class="marks-info">Marks Obtained : <?php echo $_SESSION['score'] ?></div>
+                <div class="ques-list">Correct Questions : <?php echo $_SESSION['score'] ?></div>
+              </div>
+              <div class="pieDiv">
+                <div id="chartContainer" style="width: 300px; height: 200px;"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+body{
+	color: white;
+	background-color: rgba(47,47,47,0.9);
+}
+.laptop_container{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.log-form , .sign-form{
+	opacity: 0;
+}
+.login form {
+	margin-top: 25%;
+} 
+.signup form {
+	margin-top: 10%;
+}
+.login{
+	opacity: 0.5;
+	display: inline-block;
+    color: white;
+    background-image:url(log.png);
+    padding:20px;
+    margin-right: -4px;
+    width: 46%;
+    height:600px;
+    vertical-align:middle;
+    text-align: center;
+    background-size: cover;
+    text-shadow: 2px 2px rgba(240,76,60,0.5);
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+}
+.signup{
+	opacity: 0.5;
+	display: inline-block;
+	color: white;
+    background-image:url(sign.png);
+    padding:20px;
+    width: 46%;
+    margin-right: -4px;
+    height:600px;
+    vertical-align:middle;
+    text-align: center;
+    background-size: cover;
+    text-shadow: 2px 2px rgba(240,76,60,0.5);
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+}
+
+input{margin: 2%;}
+.input{
+    width: 75%;
+    padding: 1px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    border-radius: 5px;
+    margin: 8px;
+    border-color: black;
+    border-width: thin;
+    height: 30px;
+    font-size: 25px;
+    border:  2px solid #85C1E9;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.creat_account{
+    height: 50%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+    border-style: none;
+    padding: 6px 13px;
+    margin-top: 8px;
+    font-weight: bolder;
+    background-color: #0d96e2;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px rgba(47,47,47,0.89);
+}
+
+.ForgotPass{
+    background: transparent;
+    cursor: pointer;
+    border-style: none;
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+}
+/* ------------------------------------------page for small screen -------------------------*/
+
+
+.signUpPage{
+	text-align: center;
+	display: none;
+}
+button:focus{
+    outline-color: rgba(9,9,9,0);
+}
+img{
+	width: 243px;
+    margin: 2%;
+}
+.SignUpBlock{
+	display: none;
+	text-align: center;
+    background-color: #0087ce;
+    display: inline-block;
+    border-radius: 3px;
+    width: 40%;
+    box-shadow: inset 0px 0px 3px rgba(47,47,47,0.5);
+    box-shadow: 6px 6px 10px rgba(225,225,225,0.5);
+}
+#goBack{
+	background-color: #0087ce;
+	cursor: pointer;
+	display: none;
+	border-style: none;
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #0087ce;
+    border-bottom-color: #f9f398;
+}
+.SignUpBlock #SignUpButton{
+	background-color: white;
+	cursor: pointer;
+	border-style: none;
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+    float: left;
+    width: 50%;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.SignUpBlock #LogInButton{
+	background-color: #0087ce;
+	cursor: pointer;
+	border-style: none;
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+    float: left;
+    width: 50%;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #0087ce;
+    border-bottom-color: #f9f398;
+}
+
+.SignUpBlock #LogInButton::-moz-focus-inner {
+border: 0;
+}
+.SignUpBlock #SignUpButton::-moz-focus-inner {
+border: 0;
+}
+
+.SignUpBlock input{margin: 2%;}
+.SignUpBlock form .input{
+    width: 75%;
+    padding: 1px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    border-radius: 5px;
+    margin: 8px;
+    border-color: black;
+    border-width: thin;
+    background-color: #0087ce;
+    height: 30px;
+    color: #f7f198;
+    font-size: 25px;
+}
+.SignUpBlock form input:focus{
+	border: #f7f198  solid;
+	outline: none;
+	border-width: thin;
+}
+#signUpForm{display: none;}
+#forgetForm{display: none;}
+#forgetForm1{display: none;}
+#logInForm{display: block;}
+
+.forgetSubmit{
+    height: 50%;
+    margin-top: 2%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding: 6px 13px;
+    font-weight: bolder;
+    border-style: none;
+    background-color: #64dd16;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px rgba(47,47,47,0.89);
+}
+::-webkit-input-placeholder {font-size: 20px;}
+.LogInButton2{
+    height: 50%;
+    margin-top: 2%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding: 6px 13px;
+    font-weight: bolder;
+    background-color: #63dc15;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px rgba(47,47,47,0.89);
+}
+.SignUpBlock p{color: #000}
+.SignUpBlock p b{color: green}
+.Other_signup{display: block;}
+.Other_signup div{
+	display: inline-block;
+	margin: 2%;
+}
+.SignUpContainer p a:hover{
+	color: #f7f198;
+} 
+@media only screen and (max-width: 700px) {
+	body{
+		margin-top: 20%;
+	}
+  .SignUpBlock{
+  	width: 100%;
+  }
+}
+@media only screen and (max-width: 990px) {
+	.signUpPage{
+		display: block;
+	}
+	.laptop_container{
+		display: none;
+	}
+	body{
+		background-color: black;
+	}
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

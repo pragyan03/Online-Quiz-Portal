@@ -1,0 +1,263 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.topNavBar{
+	background-color: black;
+    display: block;
+    margin-top: 0px;
+    padding: 0px;
+    padding-bottom: 10px
+}
+
+.topNavBar .logo_and_form img{
+    height: 100%;
+    width: 142px;
+    padding-top: 10px;
+    padding-left: 21px;
+    /* vertical-align: middle; */
+    display: inline-block;
+}
+.topNavBar .logo_and_form .topNavBarForm{
+	float: right;
+    padding: 35px;
+    padding-bottom: 0px;
+}
+.topNavBar .logo_and_form .topNavBarForm .input{
+
+    height: 32px;
+    font-weight: 300;
+    border-style: solid;
+    padding-left: 13px;
+    border-width: thin;
+    border-color: #f7e07c;
+}
+.topNavBar .logo_and_form .topNavBarForm form input[type="submit"]{
+	padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    border-style: solid;
+    background-color: #0085cc;
+    font-size: medium;
+    border-width: thin;
+    border-color: #0073c0;
+    color: white;
+    font-weight: 500;
+}
+.register_and_forgot_button{
+	width: 100%;
+	text-align: right;
+}
+.register_and_forgot_button a{
+	margin-right: 133px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: larger;
+}
+
+/*-----------------------NAVBAR CODE------------------------------*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0085cc;
+    border-top-color: #f7e07c;
+    border-bottom-color: #f7ee91;
+    border-style: solid;
+    border-width: thin;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #f5e380;}
+
+ul.topnav li a.active {background-color: #000000;}
+
+ul.topnav li.right {float: right;}
+/*------------------------------image and register button code --------------------------------*/
+.imageAndRegisterButton{
+	background-image: url(wall.jpeg);
+	background-color: black;
+	padding-bottom: 10px;
+}
+.featuredContent{
+	    margin-left: 7%;
+	width:454px;
+    height:348px;
+    margin-right: 40px;
+    display: block;
+}
+.featuredContent h2{
+	color: #FFF;
+    font-size: 37px;
+    line-height: 1.15;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 2px #282929;
+    padding-top: 45px;
+}
+.featuredContent p {
+	    font-size: 15px;
+    color: #FFF;
+    line-height: 1.46;
+}
+.featuredContent a{    
+    display: inline-block;
+    /* width: auto; */
+    /* height: 36px; */
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #0085cc;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: 27px 0 5px 3px;
+    font-size: 22px;
+    color: #FFF;
+    /* -webkit-box-shadow: 0 0 1px 1px #2e2e2e; */
+    box-shadow: 0 0 2px 2px #2e2e2e;
+    border-radius: 4px;
+    border-width: thin;
+    border-color: black;
+}
+.featuredContent button:hover{
+	background-color: #f5e380;
+	color: black;
+}
+/*-------------------------------ourFeatures----------------------------------------*/
+.ourFeatures{
+	padding-bottom: 20px;
+	background-color: #0085cc;
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+.see_it_in_action_img{
+	display: inline-block;
+	width: 48%;
+}
+.featuresContent{
+	display: inline-block;
+	width: 48%;
+}
+.see_it_in_action_img img{
+	height: 100%;
+    width: 300px;
+    padding: 20px;
+}
+.featuresContent ul{
+    margin: 0px;
+    padding-left: 22px;
+    color: #fefefe;
+    font-size: 18px;
+}
+.featuresContent h1{
+    line-height: 1.15;
+    color: #FFF;
+    font-size: 32px;
+    margin-bottom: 0px;
+    font-family: Helvetica;
+    padding-top: 24px;
+    margin-bottom: 13px;
+}
+/*-----------------------------------FOOTER------------------------------------------*/
+footer{
+	width: 100%;
+    color: white;
+    background-color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+footer p{
+	margin-left: 20px;
+	margin-top: 0px;
+}
+footer a{ 
+	color: white;
+	text-decoration: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------PHONE VIEW CODE -----------------------*/
+@media screen and (max-width: 600px){
+	.topNavBar .logo_and_form{
+		text-align: center;
+	}
+	.topNavBar .logo_and_form img{
+		padding-left: 0px;
+	}
+	.topNavBar .logo_and_form .topNavBarForm{
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	.topNavBar .logo_and_form .topNavBarForm form{
+		text-align: center;
+		display: block;
+	}
+	.topNavBar .logo_and_form .topNavBarForm input{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.topNavBar .logo_and_form .topNavBarForm button{
+		margin-top: 10px;
+	}
+	.register_and_forgot_button{
+		text-align: center;
+	}
+	.register_and_forgot_button a{
+		margin:10px;
+		padding: 10px;
+	}
+	.featuredContent{
+		width: 95%;
+		margin-left: 10px;
+	}
+	.featuredContent button{
+		margin-top: 5px;
+	}
+	.see_it_in_action_img{
+		width: 95%;
+		display: block;
+	}
+	.featuresContent{
+		width: 95%;
+		display: block;
+	}
+	.featuresContent{text-align: center;}
+	.featuresContent ul{list-style-type: none;}
+
+
+
+
+
+
+
+
+
+
+}
